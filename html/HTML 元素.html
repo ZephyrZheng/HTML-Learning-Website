@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML 属性</title>
+	<link href="../CSS/initialize.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/subpage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/subpage.js"></script>
+    <script type="text/javascript" src="../js/headerJS.js"></script>
+    <script type="text/javascript" src="../js/dohtml.js"></script>
+	<style type="text/css">
+		#header{
+			background-color: #928AF1;
+			height: 60px;
+			width: 100%;
+		}
+		#title_hide{
+			background-color: #E1DDFF
+		}
+		#title:hover{
+			background-color: #E1DDFF;
+		}
+		#input_search{
+			background-color: #E1DDFF;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div id="header">
+			<div id="title" onMouseOver="subpage_titleOver()" onMouseOut="subpage_titleOut()">
+				<ul id="bar_ul">
+					<li class="bar" id="bar1">
+						查询&nbsp;&nbsp;&nbsp;&nbsp;<a onClick="playHide('title_hide')"><img src="../img/magnifier_zoom2.png" id="imgFind"></a>
+					</li>
+					<li  class="bar" id="bar2"><a class="bar" href="../index.html">志峰的HTML学习网站</a></li>
+					<li id="bar3"><a class="bar">登录/注册</a></li>
+				</ul>
+			</div>
+			<div id="title_hide">
+				<ul id="bar_ul_hide">
+					<li class="bar_hide">
+						<a onClick="displayHide('title_hide')"><img src="../img/closeSearch.png" id="close_search"></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<img src="../img/magnifier_zoom1.png" id="imgFind">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="bar_hide">
+						<input type="text" placeholder="输入搜索内容" id="input_search">
+					</li>
+				</ul>
+			</div>
+	</div>
+
+<div id="maincontent">
+
+<h1>HTML 属性</h1>
+<hr>
+<div id="intro">
+<p><strong>HTML 文档是由 HTML 元素定义的。</strong></p>
+</div>
+
+
+<div>
+	<div class="hline4"></div>
+<h2>HTML 元素</h2>
+
+<p>HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。</p>
+
+<table class="dataintable">
+<tbody><tr>
+<th style="width:33%;">开始标签</th>
+<th style="width:33%;">元素内容</th>
+<th>结束标签</th>
+</tr>
+
+<tr>
+<td>&lt;p&gt;</td>
+<td>This is a paragraph</td>
+<td>&lt;/p&gt;</td>
+</tr>
+
+<tr>
+<td>&lt;a href="default.htm" &gt;</td>
+<td>This is a link</td>
+<td>&lt;/a&gt;</td>
+</tr>
+
+<tr>
+<td>&lt;br /&gt;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p class="note"><span>注释：</span>开始标签常被称为开放标签（opening tag），结束标签常称为闭合标签（closing tag）。</p>
+</div>
+
+
+<div>
+	<div class="hline4"></div>
+<h2>HTML 元素语法</h2>
+
+<ul>
+<li>HTML 元素以<em>开始标签</em>起始</li>
+<li>HTML 元素以<em>结束标签</em>终止</li>
+<li><em>元素的内容</em>是开始标签与结束标签之间的内容</li>
+<li>某些 HTML 元素具有<em>空内容（empty content）</em></li>
+<li>空元素<em>在开始标签中进行关闭</em>（以开始标签的结束而结束）</li>
+<li>大多数 HTML 元素可拥有<em>属性</em></li>
+</ul>
+
+<p class="tip"><span>提示：</span>您将在本教程的下一章中学习更多有关属性的内容。</p>
+</div>
+
+
+<div>
+	<div class="hline4"></div>
+<h2>嵌套的 HTML 元素</h2>
+
+<p>大多数 HTML 元素可以嵌套（可以包含其他 HTML 元素）。</p>
+<p>HTML 文档由嵌套的 HTML 元素构成。</p>
+
+
+	<div class="hline4"></div>
+<h3>HTML 文档实例</h3>
+
+<textarea id="area1">&lt;html&gt;
+
+&lt;body&gt;
+&lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</textarea>
+<p class="tiy"><a onClick="openTestView('area1')">亲自试一试</a></p>
+
+<p>上面的例子包含三个 HTML 元素。</p>
+</div>
+
+
+<div>
+	<div class="hline4"></div>
+<h2>HTML 实例解释</h2>
+
+<h3>&lt;p&gt; 元素：</h3>
+
+<textarea>&lt;p&gt;This is my first paragraph.&lt;/p&gt;</textarea>
+
+<p>这个 &lt;p&gt; 元素定义了 HTML 文档中的一个段落。</p>
+
+<p>这个元素拥有一个开始标签 &lt;p&gt;，以及一个结束标签 &lt;/p&gt;。</p>
+
+<p>元素内容是：This is my first paragraph。</p>
+
+
+<h3>&lt;body&gt; 元素：</h3>
+
+<textarea>&lt;body&gt;
+&lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+</textarea>
+
+<p>&lt;body&gt; 元素定义了 HTML 文档的主体。</p>
+
+<p>这个元素拥有一个开始标签 &lt;body&gt;，以及一个结束标签 &lt;/body&gt;。</p>
+
+<p>元素内容是另一个 HTML 元素（p 元素）。</p>
+
+
+<h3>&lt;html&gt; 元素：</h3>
+
+<textarea>&lt;html&gt;
+
+&lt;body&gt;
+&lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</textarea>
+
+<p>&lt;html&gt; 元素定义了整个 HTML 文档。</p>
+
+<p>这个元素拥有一个开始标签 &lt;html&gt;，以及一个结束标签 &lt;/html&gt;。</p>
+
+<p>元素内容是另一个 HTML 元素（body 元素）。</p>
+</div>
+
+
+<div>
+<h2>不要忘记结束标签</h2>
+
+<p>即使您忘记了使用结束标签，大多数浏览器也会正确地显示 HTML：</p>
+
+<textarea>&lt;p&gt;This is a paragraph
+&lt;p&gt;This is a paragraph
+</textarea>
+
+<p>上面的例子在大多数浏览器中都没问题，但不要依赖这种做法。忘记使用结束标签会产生不可预料的结果或错误。</p>
+
+<p class="note"><span>注释：</span>未来的 HTML 版本不允许省略结束标签。</p>
+</div>
+
+
+<div>
+<h2>空的 HTML 元素</h2>
+
+<p>没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。</p>
+
+<p>&lt;br&gt; 就是没有关闭标签的空元素（&lt;br&gt; 标签定义换行）。</p>
+
+<p>在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。</p>
+
+<p>在开始标签中添加斜杠，比如 &lt;br /&gt;，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。</p>
+
+<p>即使 &lt;br&gt; 在所有浏览器中都是有效的，但使用 &lt;br /&gt; 其实是更长远的保障。</p>
+</div>
+
+
+<div>
+<h2>HTML 提示：使用小写标签</h2>
+
+<p>HTML 标签对大小写不敏感：&lt;P&gt; 等同于 &lt;p&gt;。许多网站都使用大写的 HTML 标签。</p>
+
+<p>W3School 使用的是小写标签，因为万维网联盟（W3C）在 HTML 4 中<em>推荐</em>使用小写，而在未来 (X)HTML 版本中<em>强制</em>使用小写。</p>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="/html/html_basic.asp" title="HTML 基础 - 四个实例">HTML 基础</a></li>
+<li class="next"><a href="/html/html_attributes.asp" title="HTML 属性">HTML 属性</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+	<div id="test">
+		<div id="testbg"></div>
+		<div id="testmain">
+			<div id="closediv"><a onClick="closeTestView()"><img src="../img/close.png" id="close"></a></div>
+			<div id="closediv"><a onClick="showResult()"><img src="../img/update.png" id="update"></a></div>
+			<div id="testdiv">
+				<textarea id="code"></textarea>
+				<div id="preview"></div>
+				<script>
+				   showResult();
+				   $("#code").keydown(function(){
+					 showResult();
+				   });
+				   function showResult() {
+					 $("#preview").html($("#code").val());
+				   }
+				</script>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

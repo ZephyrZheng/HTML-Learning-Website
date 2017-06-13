@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#header{
+			background-color: #928AF1;
+			height: 60px;
+			width: 100%;
+		}
+		#title_hide{
+			background-color: #E1DDFF
+		}
+		#title:hover{
+			background-color: #E1DDFF;
+		}
+		#input_search{
+			background-color: #E1DDFF;
+		}
+	</style>
+	<link href="../CSS/initialize.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/subpage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/subpage.js"></script>
+    <script type="text/javascript" src="../js/headerJS.js"></script>
+    <script type="text/javascript" src="../js/dohtml.js"></script>
+	<title>HTML 响应式 Web 设计</title>
+</head>
+	<div id="main">
+		<div id="header">
+			<div id="title" onMouseOver="subpage_titleOver()" onMouseOut="subpage_titleOut()">
+				<ul id="bar_ul">
+					<li class="bar" id="bar1">
+						查询&nbsp;&nbsp;&nbsp;&nbsp;<a onClick="playHide('title_hide')"><img src="../img/magnifier_zoom2.png" id="imgFind"></a>
+					</li>
+					<li  class="bar" id="bar2"><a class="bar" href="../index.html">志峰的HTML学习网站</a></li>
+					<li id="bar3"><a class="bar">登录/注册</a></li>
+				</ul>
+			</div>
+			<div id="title_hide">
+				<ul id="bar_ul_hide">
+					<li class="bar_hide">
+						<a onClick="displayHide('title_hide')"><img src="../img/closeSearch.png" id="close_search"></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<img src="../img/magnifier_zoom1.png" id="imgFind">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li class="bar_hide">
+						<input type="text" placeholder="输入搜索内容" id="input_search">
+					</li>
+				</ul>
+			</div>
+			<div id="textdiv">
+				<div id="text">
+					<div id="titletext">HTML 响应式 Web 设计</div>
+					<div class="hline4"></div>
+					<div class="textshow">
+						<h2>本章通过实例向您演示最常用的 HTML 标签。</h2>
+						<p>提示：不要担心本章中您还没有学过的例子，您将在下面的章节中学到它们。</p>
+						<p>提示：学习 HTML 最好的方式就是边学边做实验。我们为您准备了很好的 HTML 编辑器。使用这个编辑器，您可以任意编辑一段 HTML 源码，然后单击 TIY 按钮来查看结果。</p>
+					</div>
+					<div class="hline4"></div>
+					<div class="textshow">
+						<h2>HTML 标题</h2>
+						<p>HTML 标题（Heading）是通过 &lt;h1&gt; - &lt;h6&gt; 等标签进行定义的。</h6>
+						<h2>实例</h2>
+					</div>
+					<textarea class="htmltext" readonly>
+<html>
+<body>
+
+<h1>This is a heading</h1>
+<h2>This is a heading</h2>
+<h3>This is a heading</h3>
+
+</body>
+</html>
+					</textarea>
+					<div class="try"><a onClick="openTestView('area1')">试一试</a></div>
+					<div class="hline4"></div>
+					<div class="textshow">
+						<h2>HTML 段落</h2>
+						<p>HTML 段落是通过 &lt;p&gt; 标签进行定义的。</p>
+						<h2>实例</h2>
+					</div>
+					<textarea class="htmltext" readonly>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+					</textarea>
+					<div class="try"><a onClick="openTestView('area1')">试一试</a></div>
+					<div class="hline4"></div>
+					<div class="textshow">
+						<h2>HTML 链接</h2>
+						<p>HTML 链接是通过 &lt;a&gt; 标签进行定义的。</p>
+						<h2>实例</h2>
+					</div>
+					<textarea class="htmltext" readonly>
+<html>
+<body>
+
+<a href="http://www.w3school.com.cn">This is a link</a>
+
+</body>
+</html>
+					</textarea>
+					<div class="textshow">
+						<p>注释：在 href 属性中指定链接的地址。</p>
+						<p>（您将在本教程稍后的章节中学习更多有关属性的知识）。</p>
+					</div>
+					<div class="try"><a onClick="openTestView('area1')">试一试</a></div>
+					<div class="hline4"></div>
+					<textarea id="area1" class="htmltext" readonly>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+					</textarea>
+					<div class="try"><a onClick="openTestView('area1')">试一试</a></div>
+					<div class="hline4"></div>
+					<div class="textshow">
+						<h2>例子解释</h2>
+						<ul>
+							<li>&lt;html&gt; 与 &lt;/html&gt; 之间的文本描述网页</li>
+							<li>&lt;body&gt; 与 &lt;/body&gt; 之间的文本是可见的页面内容</li>
+							<li>&lt;h1&gt; 与 &lt;/h1&gt; 之间的文本被显示为标题</li>
+							<li>&lt;p&gt; 与 &lt;/p&gt; 之间的文本被显示为段落</li>
+						</ul>
+					</div>
+					<div class="hline4"></div>
+					<div class="textshow"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="test">
+		<div id="testbg"></div>
+		<div id="testmain">
+			<div id="closediv"><a onClick="closeTestView()"><img src="../img/close.png" id="close"></a></div>
+			<div id="closediv"><a onClick="showResult()"><img src="../img/update.png" id="update"></a></div>
+			<div id="testdiv">
+				<textarea id="code"></textarea>
+				<div id="preview"></div>
+				<script>
+				   showResult();
+				   $("#code").keydown(function(){
+					 showResult();
+				   });
+				   function showResult() {
+					 $("#preview").html($("#code").val());
+				   }
+				</script>
+			</div>
+		</div>
+	</div>
+<body>
+</body>
+</html>

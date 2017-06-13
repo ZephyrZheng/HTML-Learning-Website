@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>志峰的html学习网站</title>
+	<link href="CSS/index.css" rel="stylesheet" type="text/css">
+	<link href="CSS/initialize.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/headerJS.js"></script>
+    <script type="text/javascript">
+        function duan(p){
+            var obj=document.getElementById(p);
+            obj.style.width="5%";
+        }
+
+    </script>
+</head>
+<body>
+	<div id="main">
+    	<div id="header">
+        	<div id="title" onMouseOver="titleOver()" onMouseOut="titleOut()">
+                <ul id="bar_ul">
+                    <li class="bar" id="bar1">
+                    	查询&nbsp;&nbsp;&nbsp;&nbsp;<a onClick="playHide('title_hide')"><img src="img/magnifier_zoom2.png" id="imgFind"></a>
+                    </li>
+                    <li  class="bar" id="bar2"><div>志峰的HTML学习网站</div></li>
+                    <li id="bar3"><a class="bar">登录/注册</a></li>
+                </ul>
+     		</div>
+            <div id="title_hide">
+                <ul id="bar_ul_hide">
+                    <li class="bar_hide">
+                    	<a onClick="displayHide('title_hide')"><img src="img/closeSearch.png" id="close_search"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="img/magnifier_zoom1.png" id="imgFind">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li class="bar_hide">
+                    	<input type="text" placeholder="输入搜索内容" id="input_search">
+                    </li>
+                </ul>
+     		</div>
+            <div id="hline">
+            	<div id="remaindText">You only need to know one thing: You can learn anything!</div>
+        	</div>
+        </div>
+        <div id="kind_menu">
+        	<ul>
+            	<li id="menuLi1" class="kind_menu_li"><a href="#kind1" href="html/html1.html" target="_parent">基础教程</a></li>
+            	<li id="menuLi2" class="kind_menu_li"><a href="#kind2" href="html/html2.html" target="_parent">XHTML</a></li>
+            	<li id="menuLi3" class="kind_menu_li"><a href="#kind3" href="html/html3.html" target="_parent">表单</a></li>
+            	<li id="menuLi4" class="kind_menu_li"><a href="#kind4" href="html/html4.html" target="_parent">HTML5</a></li>
+            	<li id="menuLi5" class="kind_menu_li"><a href="#kind5" href="html/html5.html" target="_parent">图形</a></li>
+            	<li id="menuLi6" class="kind_menu_li"><a href="#kind6" href="html/html6.html" target="_parent">媒体</a></li>
+            	<li id="menuLi7" class="kind_menu_li"><a href="#kind7" href="html/html7.html" target="_parent">API</a></li
+            </ul>
+        </div>
+        <div id="content">
+            <div id="kind1" class="kind">
+				<div class="kindLeft"><div><a name="kind1">HTML基础教程</a></div></div>
+                <div class="kindRight">
+                    <table>
+						<tr><td></td></tr>
+                        <tr>
+							<td><a href="html/HTML简介.html" target="_parent">HTML 简介</a></td>
+							<td><a href="html/HTML 编辑器.html" target="_parent">HTML 编辑器</a></td>
+							<td><a href="html/HTML 基础.html" target="_parent">HTML 基础</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/HTML 属性.html" target="_parent">HTML 元素</a></td>
+							<td><a href="html/HTML 属性.html" target="_parent">HTML 属性</a></td>
+							<td><a href="html/HTML 标题.html" target="_parent">HTML 标题</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/HTML 段落.html" target="_parent">HTML 段落</a></td>
+							<td><a href="html/html8.html" target="_parent">HTML 样式</a></td>
+							<td><a href="html/html9.html" target="_parent">HTML 格式化</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html10.html" target="_parent">HTML 引用</a></td>
+							<td><a href="html/html11.html" target="_parent">HTML 计算机代码</a></td>
+							<td><a href="html/html12.html" target="_parent">HTML 注释</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html13.html" target="_parent">HTML CSS</a></td>
+							<td><a href="html/html14.html" target="_parent">HTML 链接</a></td>
+							<td><a href="html/html15.html" target="_parent">HTML 图像</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html16.html" target="_parent">HTML 表格</a></td>
+							<td><a href="html/html17.html" target="_parent">HTML 列表</a></td>
+							<td><a>HTML 块</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html1.html" target="_parent">HTML 类</a></td>
+							<td><a href="html/html1.html" target="_parent">HTML 布局</a></td>
+							<td><a href="html/html2.html" target="_parent">HTML 响应式设计</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html2.html" target="_parent">HTML 框架</a></td>
+							<td><a href="html/html2.html" target="_parent">HTML 内联框架</a></td>
+							<td><a href="html/html2.html" target="_parent">HTML 背景</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html4.html" target="_parent">HTML 脚本</a></td>
+							<td><a href="html/html5.html" target="_parent">HTML 头部</a></td>
+							<td><a href="html/html6.html" target="_parent">HTML 实体</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html7.html" target="_parent">HTML URL</a></td>
+							<td><a href="html/html8.html" target="_parent">HTML URL编码</a></td>
+							<td><a href="html/html9.html" target="_parent">HTML Web 服务器</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html3.html" target="_parent">HTML 颜色</a></td>
+							<td><a href="html/html3.html" target="_parent">HTML 颜色名</a></td>
+							<td><a href="html/html3.html" target="_parent">HTML 文档类型</a></td>
+                        </tr>
+						<tr><td></td></tr>
+                    </table>
+                </div>
+            </div>
+			<div class="hline3"></div>
+            <div id="kind2" class="kind">
+                <div class="kindLeft"><div><a name="kind2">HTML XHTML</a></div></div>
+                <div class="kindRight">
+                    <table>
+						<tr><td></td></tr>
+                        <tr>
+							<td><a href="html/html3.html" target="_parent" onfocus="duan('menuLi1')">XHTML 简介</a></td>
+							<td><a href="html/html3.html" target="_parent">XHTML 元素</a></td>
+							<td><a href="html/html3.html" target="_parent">XHTML 属性</a></td>
+                        </tr>
+						<tr><td></td></tr>
+                    </table>
+                </div>
+			</div>
+            <div class="hline3"></div>
+            <div id="kind3" class="kind">
+                <div class="kindLeft"><div><a name="kind3">HTML 表单</a></div></div>
+                <div class="kindRight">
+                    <table>
+						<tr><td></td></tr>
+                        <tr>
+							<td><a href="html/html6.html" target="_parent">HTML 表单</a></td>
+							<td><a href="html/html7.html" target="_parent">HTML 表单元素</a></td>
+							<td><a href="html/html8.html" target="_parent">HTML 输入类型</a></td>
+                        </tr>
+						<tr>
+                       		<td><a href="html/html9.html" target="_parent">HTML 输入属性</a></td>
+						</tr>
+						<tr><td></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="hline3"></div>
+            <div id="kind4" class="kind">
+            	<div class="kindLeft"><div><a name="kind4">HTML5</a></div></div>
+                <div class="kindRight">
+                    <table>
+						<tr><td></td></tr>
+                        <tr>
+							<td><a href="html/html4.html" target="_parent">HTML5 简介</a></td>
+							<td><a href="html/html1.html" target="_parent">HTML5 支持</a></td>
+							<td><a href="html/html2.html" target="_parent">HTML5 元素</a></td>
+                        </tr>
+                        <tr>
+							<td><a href="html/html3.html" target="_parent">HTML5 语义</a></td>
+							<td><a href="html/html4.html" target="_parent">HTML5 迁移</a></td>
+							<td><a href="html/html5.html" target="_parent">HTML5 代码约定</a></td>
+                        </tr>
+						<tr><td></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="hline3"></div>
+            <div id="kind5" class="kind">
+            	<div class="kindLeft"><div><a name="kind5">HTML 图形</a></div></div>
+                <div class="kindRight">
+                    <table>
+						<tr><td></td></tr>
+                        <tr>
+							<td><a href="html/html6.html" target="_parent">HTML5 画布</a></td>
+							<td><a href="html/html7.html" target="_parent">HTML5 SVG</a></td>
+							<td><a href="html/html8.html" target="_parent">HTML5 画布 vs SVG</a></td>
+                        </tr>
+						<tr><td></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="hline3"></div>
+            <div id="kind6" class="kind">
+            	<div class="kindLeft"><div><a name="kind6">HTML 媒体</a></div></div>
+                <div class="kindRight">
+                    <table>
+						<tr><td></td></tr>
+                        <tr>
+							<td><a href="html/html9.html" target="_parent">HTML 媒体</a></td>
+							<td><a href="html/html5.html" target="_parent">HTML 对象</a></td>
+							<td><a href="html/html5.html" target="_parent">HTML 音频</a></td>
+                        </tr>
+						<tr>
+                       		<td><a href="html/html5.html" target="_parent">HTML 视频</a></td>
+						</tr>
+						<tr><td></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="hline3"></div>
+            <div id="kind7" class="kind">
+            	<div class="kindLeft"><div><a name="kind7">HTML API</a></div></div>
+                <div class="kindRight">
+                    <table>
+						<tr><td></td></tr>
+                        <tr>
+							<td><a href="html/html5.html" target="_parent">HTML5 地理定位</a></td>
+							<td><a href="html/html4.html" target="_parent">HTML5 拖放</a></td>
+							<td><a href="html/html5.html" target="_parent">HTML5 Web 存储</a></td>
+                        </tr>
+						<tr>
+                       		<td><a href="html/html6.html" target="_parent">HTML5 应用缓存</a></td>
+                       		<td><a href="html/html7.html" target="_parent">HTML5 Web Workers</a></td>
+                       		<td><a href="html/html8.html" target="_parent">HTML5 SSE</a></td>
+						</tr>
+						<tr><td></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="hline3"></div>
+        </div>
+    </div>
+</body>
+</html>
